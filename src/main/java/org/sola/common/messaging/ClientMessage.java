@@ -52,6 +52,7 @@ public class ClientMessage {
     private static final String BR = MSG_PREFIX + "br";
     private static final String PROGRESSMSG = MSG_PREFIX + "prgs";
     private static final String BULK_OPERATIONS = MSG_PREFIX + "_bulk_operations_";
+    private static final String SYSTEMATIC_REGISTRATION = MSG_PREFIX + "_sys_reg_";
     // <editor-fold defaultstate="collapsed" desc="Test Messages">  
     /**
      * clitest001 - Unit Test Message
@@ -1235,4 +1236,12 @@ public class ClientMessage {
      */
     public static final String BULK_OPERATIONS_LOAD_SOURCE_TYPE_NOT_FOUND =
             BULK_OPERATIONS + "004";
+    
+    
+    public static final String SYSTEMATIC_REGISTRATION_CLAIM =
+            SYSTEMATIC_REGISTRATION + "001";
+    public static final String SYSTEMATIC_REGISTRATION_CLAIMANTS =
+            SYSTEMATIC_REGISTRATION + "002";
+    public static final String SYSTEMATIC_REGISTRATION_CLAIMANT =
+            SYSTEMATIC_REGISTRATION + "003";
 }
