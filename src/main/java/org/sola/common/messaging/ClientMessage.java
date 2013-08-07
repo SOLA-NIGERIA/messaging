@@ -53,6 +53,8 @@ public class ClientMessage {
     private static final String PROGRESSMSG = MSG_PREFIX + "prgs";
     private static final String BULK_OPERATIONS = MSG_PREFIX + "_bulk_operations_";
     private static final String SYSTEMATIC_REGISTRATION = MSG_PREFIX + "_sys_reg_";
+    private static final String DISPUTE = MSG_PREFIX + "dispute";
+    
     // <editor-fold defaultstate="collapsed" desc="Test Messages">  
     /**
      * clitest001 - Unit Test Message
@@ -775,6 +777,52 @@ public class ClientMessage {
      */
     public static final String BAUNIT_LEASE_REJECTION_REASON_TITLE = BAUNIT + "026";
     
+      /**
+     * clidispute001 - Dispute has been saved successfully.
+     */
+    public static final String DISPUTE_SAVED = DISPUTE + "001";
+    /**
+     * clidispute002 - Failed to save property.
+     */
+    public static final String DISPUTE_SAVE_FAILED = DISPUTE + "002";
+    /**
+     * clidispute003 - Dispute Comments has been saved successfully.
+     */
+    public static final String DISPUTE_COMMENTS_SAVED = DISPUTE + "003";
+    /**
+     * clidispute004 - Failed to save property.
+     */
+    public static final String DISPUTE_COMMENTS_SAVE_FAILED = DISPUTE + "004";
+    
+    /**
+     * clidispute005 - Failed to save property.
+     */
+    public static final String DISPUTE_PARTY_SAVED = DISPUTE + "005";
+    /**
+     * clidispute006 - Choose if its dispute of court process.
+     */
+    public static final String DISPUTE_CHOOSE_RIGHT_FUNCTIONALITY = DISPUTE + "006";
+    /**
+     * clidispute007 - Choose if its dispute of court process.
+     */
+    
+    public static final String DISPUTE_CAPTURE_COURT_CASE_NUMBER = DISPUTE + "007";
+    /**
+     * clidispute008 - Save a dispute or court case first.
+     */ 
+    public static final String DISPUTE_SAVE_FIRST = DISPUTE + "008";
+    /**
+     * clidispute009 - Close a dispute or court case first.
+     */ 
+    public static final String DISPUTE_CLOSED = DISPUTE + "009";
+    /**
+     * clidispute010 - Capture Dispute Category or Type First.
+     */ 
+    public static final String DISPUTE_CAPTURE_CATEGORY_OR_TYPE_FIRST = DISPUTE + "010";
+    /**
+     * clidispute011 - Capture Action Required.
+     */ 
+    public static final String DISPUTE_ACTION_REQUIRED = DISPUTE + "011";
     // General error messages
     /**
      * clierrs001 - Can't cerate a new file. {0}
@@ -1212,6 +1260,11 @@ public class ClientMessage {
      * cliprgs040 - Getting property...
      */
     public static final String PROGRESS_MSG_BA_UNIT_GETTING = PROGRESSMSG + "040";
+    
+     /**
+     * cliprgs046 - Opening dispute and court cases application form...
+     */
+     public static final String PROGRESS_MSG_OPEN_DISFORM = PROGRESSMSG + "046";
     
     /**
      * cli_bulk_operations_001 - The destination attribute already exist! You
