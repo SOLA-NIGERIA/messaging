@@ -1265,7 +1265,13 @@ public class ClientMessage {
      * cliprgs046 - Opening dispute and court cases application form...
      */
      public static final String PROGRESS_MSG_OPEN_DISFORM = PROGRESSMSG + "046";
+     
+      /**
+     * cliprgs047 - Opening dispute search...
+     */
+     public static final String PROGRESS_MSG_OPEN_DISSEARCH = PROGRESSMSG + "047";
     
+     
     /**
      * cli_bulk_operations_001 - The destination attribute already exist! You
      * can remove it before adding it again.
