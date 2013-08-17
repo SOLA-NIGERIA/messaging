@@ -424,6 +424,11 @@ public class ClientMessage {
      */
     public static final String CHECK_NOTNULL_AREA = CHECK + "100";
     
+    /**
+     * clichck101 - Cannot select more that one property per SLTR claim.
+     */
+    public static final String CHECK_A_PROPERTY_ALREADY_SELECTED = CHECK + "101";
+    
     // Application messages
     /**
      * cliapp001 - Select document to attach digital copy.
