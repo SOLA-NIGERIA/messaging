@@ -428,6 +428,12 @@ public class ClientMessage {
      * clichck101 - Cannot select more that one property per SLTR claim.
      */
     public static final String CHECK_A_PROPERTY_ALREADY_SELECTED = CHECK + "101";
+     
+     /**
+     * clichck102 - Cannot select a parcel that does not have the same Upi ward code and Parcel number of the claimed SLTR property.
+     */
+    public static final String CHECK_UPIWARDCODE_PROPERTY_SELECTED = CHECK + "102";
+   
     
     // Application messages
     /**
