@@ -225,6 +225,10 @@ public class GisMessage {
      public static final String CADASTRE_CHANGE_FORM_SURVEYPOINT_TITLE  = 
              CADASTRE_CHANGE + "028";
 
+    /** Parcel Number already exists **/
+     public static final String PARCEL_EXISTS  = CADASTRE_CHANGE + "029";
+    
+     
      
      //Cadastre redefinition
     /**Coordinates entered are not valid.*/
