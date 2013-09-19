@@ -1281,6 +1281,11 @@ public class ClientMessage {
      * cliprgs047 - Opening dispute search...
      */
      public static final String PROGRESS_MSG_OPEN_DISSEARCH = PROGRESSMSG + "047";
+      /**
+     * cliprgs048 - Opening report...
+     */
+    public static final String PROGRESS_MSG_OPEN_REPORT = PROGRESSMSG + "048";
+    
     
      
     /**
