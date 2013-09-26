@@ -437,7 +437,9 @@ public class ClientMessage {
      /**
      * clichck103 - There is no Recording Officer configured.
      */
-    public static final String CHECK_NOTNULL_RECOFF = CHECK + "103";
+    public static final String CHECK_NOTNULL_OFFICER = CHECK + "103";
+   
+    
     // Application messages
     /**
      * cliapp001 - Select document to attach digital copy.
