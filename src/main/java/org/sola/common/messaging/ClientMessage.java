@@ -646,6 +646,12 @@ public class ClientMessage {
      * clirpt004 - No certificate
      */
     public static final String NO_CERTIFICATE_GENERATION = REPORT + "004";
+    
+    /**
+     * clirpt005 - Starting day must be Monday
+     */
+    public static final String DATE_MONDAY = REPORT + "005";
+    
     // Digital archive messages
     /**
      * cliarch001 - Select file to open.
