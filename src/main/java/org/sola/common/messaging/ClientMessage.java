@@ -651,6 +651,13 @@ public class ClientMessage {
      * clirpt005 - Starting day must be Monday
      */
     public static final String DATE_MONDAY = REPORT + "005";
+     /**
+     * clirpt006 - Cofa for #{0} already exists
+     */
+    public static final String TITLE_ALREADY_GENERATED = REPORT + "006";
+   
+    
+    
     
     // Digital archive messages
     /**
