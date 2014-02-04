@@ -438,8 +438,15 @@ public class ClientMessage {
      * clichck103 - There is no Recording Officer configured.
      */
     public static final String CHECK_NOTNULL_OFFICER = CHECK + "103";
-   
+     /**
+     * clichck104 - Application already assigned to  {0}
+     */
+    public static final String CHECK_ALREADY_ASSIGNED = CHECK + "104";
     
+     /**
+     * clichck105 - gender must be specified.
+     */
+    public static final String CHECK_NOTNULL_GENDER = CHECK + "105";
     // Application messages
     /**
      * cliapp001 - Select document to attach digital copy.
