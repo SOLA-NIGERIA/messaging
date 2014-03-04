@@ -447,6 +447,24 @@ public class ClientMessage {
      * clichck105 - gender must be specified.
      */
     public static final String CHECK_NOTNULL_GENDER = CHECK + "105";
+    
+    
+   
+     /**
+     * clichck106 - There can be only one Sole Land Holder.
+    */
+    public static final String ONLY_ONE_SOLEOWNER = CHECK + "106";
+    
+      /**
+    * clichck107 - Some of Joint Land Holders proportion has not been added in the notation list.
+    */
+    public static final String NOTATION_NOT_ASMUCHAS_OWNERS = CHECK + "107";
+     
+      /**
+     * clichck108 - Select one of the Land Holder Types
+      */
+    public static final String SHARES_SELECT_TYPE = CHECK + "106";
+    
     // Application messages
     /**
      * cliapp001 - Select document to attach digital copy.
@@ -1139,6 +1157,47 @@ public class ClientMessage {
      * cliadmin023 - Reference data object \"{0}\" has been saved.
      */
     public static final String ADMIN_REFDATA_SAVED = ADMIN + "023";
+	/**
+     * cliadmin024 - Extract records from the system...
+     */
+    public static final String ADMIN_CONSOLIDATION_EXTRACT = ADMIN + "024";
+    
+    /**
+     * cliadmin025 - Consolidate records to the current system...
+     */
+    public static final String ADMIN_CONSOLIDATION_CONSOLIDATE = ADMIN + "025";
+
+    /**
+     * cliadmin026 - Output file: {0}.
+     */
+    public static final String ADMIN_CONSOLIDATION_EXTRACT_OUTPUT_FILE = ADMIN + "026";
+
+    /**
+     * cliadmin027 - Extracted database file is missing.
+     */
+    public static final String ADMIN_CONSOLIDATION_CONSOLIDATE_FILE_MISSING = ADMIN + "027";
+	
+	 /**
+     * cliadmin028 - Uploading file ...
+     */
+    public static final String ADMIN_CONSOLIDATION_CONSOLIDATE_UPLOADING_FILE = ADMIN + "028";
+
+    /**
+     * cliadmin029 - done.
+     */
+    public static final String ADMIN_CONSOLIDATION_DONE = ADMIN + "029";
+
+    /**
+     * cliadmin030 - Consolidating in server...
+     */
+    public static final String ADMIN_CONSOLIDATION_CONSOLIDATE_CONSOLIDATING_IN_SERVER = ADMIN + "030";
+
+    /**
+     * cliadmin031 - Downloading extracted file...
+     */
+    public static final String ADMIN_CONSOLIDATION_EXTRACT_DOWNLOAD = ADMIN + "031";
+
+
     // Progress bar messages
     /**
      * cliprgs001 - Opening application form...
@@ -1344,4 +1403,6 @@ public class ClientMessage {
             SYSTEMATIC_REGISTRATION + "002";
     public static final String SYSTEMATIC_REGISTRATION_CLAIMANT =
             SYSTEMATIC_REGISTRATION + "003";
+    public static final String SYSTEMATIC_REGISTRATION_SRWU_SAVED =SYSTEMATIC_REGISTRATION + "004";
+    
 }
