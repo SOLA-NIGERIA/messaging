@@ -673,13 +673,17 @@ public class ClientMessage {
     public static final String NO_CERTIFICATE_GENERATION = REPORT + "004";
     
     /**
-     * clirpt005 - Starting day must be Monday
+     * clirpt005 - Select starting day: it must be Monday
      */
     public static final String DATE_MONDAY = REPORT + "005";
      /**
      * clirpt006 - Cofa for #{0} already exists
      */
     public static final String TITLE_ALREADY_GENERATED = REPORT + "006";
+    /**
+     * clirpt007 - CofO generation in progress
+     */
+    public static final String PROGRESS_MSG_CREATE_CERTIFICATE = REPORT + "007";
    
     
     
