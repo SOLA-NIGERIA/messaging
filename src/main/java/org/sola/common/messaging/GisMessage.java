@@ -52,6 +52,7 @@ public class GisMessage {
     private static final String IMPORT_FILE = MSG_PREFIX + "_import_file_";
     private static final String PRINT_PUBLIC_DISPLAY = MSG_PREFIX + "_public_display_";
     private static final String SPATIAL_UNIT_GROUP = MSG_PREFIX + "_spatial_unit_group_";
+    private static final String SPATIAL_UNIT_GENERIC = MSG_PREFIX + "_spatial_unit_";
     private static final String MEASURE = MSG_PREFIX + "measure";
    // General Messages
     /** gisgnrl001 - Error starting the service */
@@ -310,7 +311,9 @@ public class GisMessage {
    
    /* Changes of spatial unit groups are successfully saved.*/
     public static final String SPATIAL_UNIT_GROUP_SAVED_SUCCESS = SPATIAL_UNIT_GROUP + "01";
-    
+     /* Changes are successfully saved.*/
+    public static final String SPATIAL_UNIT_GENERIC_SAVED_SUCCESS = SPATIAL_UNIT_GENERIC + "01";
+     
     // Measure Tool
     /* gismeasure001 - Distance is {0}m */
     public static final String MEASURE_DISTANCE_METERS = MEASURE + "001";
