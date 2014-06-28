@@ -453,7 +453,7 @@ public class ClientMessage {
      /**
      * clichck106 - There can be only one Sole Land Holder.
     */
-    public static final String ONLY_ONE_SOLEOWNER = CHECK + "106";
+    public static final String ONLY_ONE_JOINTOWNER = CHECK + "106";
     
       /**
     * clichck107 - Some of Joint Land Holders proportion has not been added in the notation list.
