@@ -153,3 +153,5 @@ public class ServiceMessage {
 	 /** seradminservice005 - Consolidation failed. */
 	 public static final String ADMIN_WS_CONSOLIDATION_FAILED = ADMIN_WS + "005";
 }
+
+
