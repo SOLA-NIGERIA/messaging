@@ -1200,6 +1200,26 @@ public class ClientMessage {
      * cliadmin031 - Downloading extracted file...
      */
     public static final String ADMIN_CONSOLIDATION_EXTRACT_DOWNLOAD = ADMIN + "031";
+    
+	 /**
+     * cliadmin032 - Failed. Check the log for more information.
+     */
+    public static final String ADMIN_CONSOLIDATION_FAILED = ADMIN + "032";
+
+    /**
+     * cliadmin033 - Password is missing.
+     */
+    public static final String ADMIN_CONSOLIDATION_PASSWORD_MISSING = ADMIN + "033";
+
+    /**
+     * cliadmin034 - Retrieve log ...
+     */
+    public static final String ADMIN_CONSOLIDATION_RETRIEVE_LOG = ADMIN + "034";
+
+    /**
+     * cliadmin035 - running.
+     */
+    public static final String ADMIN_CONSOLIDATION_RUNNING = ADMIN + "035";
 
 
     // Progress bar messages

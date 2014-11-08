@@ -136,4 +136,21 @@ public class ServiceMessage {
     // Admin Web-service
     /** seradminservice001 - Username "{0}" already exists. */
     public static final String ADMIN_WS_USER_EXISTS = ADMIN_WS + "001";
+		 // Admin Web-service
+	 /** seradminservice002 - Extraction failed. */
+	 public static final String ADMIN_WS_EXTRACTION_FAILED = ADMIN_WS + "002";
+
+	 // Admin Web-service
+	 /** seradminservice003 - Preparation of consolidation schema failed. */
+	 public static final String ADMIN_WS_EXTRACTION_CONSOLIDATION_SCHEMA_FAILED = ADMIN_WS + "003";
+
+	 // Admin Web-service
+	 /** seradminservice004 - Extraction file creation failed. Files: {0}. */
+	 public static final String ADMIN_WS_EXTRACTION_FILE_CREATION_FAILED = ADMIN_WS + "004";
+
+	 // Admin Web-service
+	 /** seradminservice005 - Consolidation failed. */
+	 public static final String ADMIN_WS_CONSOLIDATION_FAILED = ADMIN_WS + "005";
 }
+
+
