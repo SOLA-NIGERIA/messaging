@@ -685,7 +685,10 @@ public class ClientMessage {
      */
     public static final String PROGRESS_MSG_CREATE_CERTIFICATE = REPORT + "007";
    
-    
+    /**
+     * clirpt008 - Is not possible to generate signing authorisation listing yet
+     */
+    public static final String NO_SIGNING_LIST_GENERATION = REPORT + "008";
     
     
     // Digital archive messages
