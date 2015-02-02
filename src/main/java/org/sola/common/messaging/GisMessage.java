@@ -319,7 +319,9 @@ public class GisMessage {
     public static final String SPATIAL_UNIT_GROUP_SAVED_SUCCESS = SPATIAL_UNIT_GROUP + "01";
      /* Changes are successfully saved.*/
     public static final String SPATIAL_UNIT_GENERIC_SAVED_SUCCESS = SPATIAL_UNIT_GENERIC + "01";
-     
+   /* The merging resulted in a multipolygon. You must change the source polygons in order that the merging can result in a single polygon. */
+    public static final String SPATIAL_UNIT_GROUP_MERGED_GEOMETRY_NOT_POLYGON = SPATIAL_UNIT_GROUP + "02";
+  
     // Measure Tool
     /* gismeasure001 - Distance is {0}m */
     public static final String MEASURE_DISTANCE_METERS = MEASURE + "001";
