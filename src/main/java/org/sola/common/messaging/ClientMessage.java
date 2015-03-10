@@ -425,12 +425,12 @@ public class ClientMessage {
     public static final String CHECK_NOTNULL_AREA = CHECK + "100";
     
     /**
-     * clichck101 - Cannot select more that one property per SLTR claim.
+     * clichck101 - Cannot select more that one property per SR claim.
      */
     public static final String CHECK_A_PROPERTY_ALREADY_SELECTED = CHECK + "101";
      
      /**
-     * clichck102 - Cannot select a parcel that does not have the same Upi ward code and Parcel number of the claimed SLTR property.
+     * clichck102 - Cannot select a parcel that does not have the same Upi ward code and Parcel number of the claimed SR property.
      */
     public static final String CHECK_UPIWARDCODE_PROPERTY_SELECTED = CHECK + "102";
    
