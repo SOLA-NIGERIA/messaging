@@ -52,7 +52,9 @@ public class ClientMessage {
     private static final String BULK_OPERATIONS = MSG_PREFIX + "_bulk_operations_";
     private static final String SYSTEMATIC_REGISTRATION = MSG_PREFIX + "_sys_reg_";
     private static final String DISPUTE = MSG_PREFIX + "dispute";
+    private static final String SECURITY = MSG_PREFIX + "sec";
     
+     
     // <editor-fold defaultstate="collapsed" desc="Test Messages">  
     /**
      * clitest001 - Unit Test Message
@@ -1435,4 +1437,24 @@ public class ClientMessage {
             SYSTEMATIC_REGISTRATION + "003";
     public static final String SYSTEMATIC_REGISTRATION_SRWU_SAVED =SYSTEMATIC_REGISTRATION + "004";
     
+ /**
+     * clisec001 - Your password is due to expire in {0} days.
+     */
+    public static final String SECURITY_WARN_PWORD_EXPIRY = SECURITY + "001";
+    /**
+     * clisec002 - Your password has been set by an administrator.
+     */
+    public static final String SECURITY_PASSWORD_SET_BY_ADMIN = SECURITY + "002";
+    /**
+     * clisec003 - Your password has expired.
+     */
+    public static final String SECURITY_PASSWORD_EXPIRED = SECURITY + "003";
+    /**
+     * clisec004 - Admin Desktop.
+     */
+    public static final String SECURITY_LOGIN_TITLE_ADMIN = SECURITY + "004";
+    /**
+     * clisec005 - State Land Desktop.
+     */
+    public static final String SECURITY_LOGIN_TITLE_SYSTEMATIC = SECURITY + "005";
 }
