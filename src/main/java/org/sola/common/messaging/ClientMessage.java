@@ -1,30 +1,28 @@
 /**
  * ******************************************************************************************
- * Copyright (C) 2012 - Food and Agriculture Organization of the United Nations
- * (FAO). All rights reserved.
+ * Copyright (C) 2015 - Food and Agriculture Organization of the United Nations (FAO).
+ * All rights reserved.
  *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
+ * Redistribution and use in source and binary forms, with or without modification,
+ * are permitted provided that the following conditions are met:
  *
- * 1. Redistributions of source code must retain the above copyright notice,this
- * list of conditions and the following disclaimer. 2. Redistributions in binary
- * form must reproduce the above copyright notice,this list of conditions and
- * the following disclaimer in the documentation and/or other materials provided
- * with the distribution. 3. Neither the name of FAO nor the names of its
- * contributors may be used to endorse or promote products derived from this
- * software without specific prior written permission.
+ *    1. Redistributions of source code must retain the above copyright notice,this list
+ *       of conditions and the following disclaimer.
+ *    2. Redistributions in binary form must reproduce the above copyright notice,this list
+ *       of conditions and the following disclaimer in the documentation and/or other
+ *       materials provided with the distribution.
+ *    3. Neither the name of FAO nor the names of its contributors may be used to endorse or
+ *       promote products derived from this software without specific prior written permission.
  *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,PROCUREMENT OF
- * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- * CONTRACT,STRICT LIABILITY,OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
- * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- * POSSIBILITY OF SUCH DAMAGE.
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+ * SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,PROCUREMENT
+ * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,STRICT LIABILITY,OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+ * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  * *********************************************************************************************
  */
 package org.sola.common.messaging;
@@ -54,7 +52,9 @@ public class ClientMessage {
     private static final String BULK_OPERATIONS = MSG_PREFIX + "_bulk_operations_";
     private static final String SYSTEMATIC_REGISTRATION = MSG_PREFIX + "_sys_reg_";
     private static final String DISPUTE = MSG_PREFIX + "dispute";
+    private static final String SECURITY = MSG_PREFIX + "sec";
     
+     
     // <editor-fold defaultstate="collapsed" desc="Test Messages">  
     /**
      * clitest001 - Unit Test Message
@@ -425,12 +425,12 @@ public class ClientMessage {
     public static final String CHECK_NOTNULL_AREA = CHECK + "100";
     
     /**
-     * clichck101 - Cannot select more that one property per SLTR claim.
+     * clichck101 - Cannot select more that one property per SR claim.
      */
     public static final String CHECK_A_PROPERTY_ALREADY_SELECTED = CHECK + "101";
      
      /**
-     * clichck102 - Cannot select a parcel that does not have the same Upi ward code and Parcel number of the claimed SLTR property.
+     * clichck102 - Cannot select a parcel that does not have the same Upi ward code and Parcel number of the claimed SR property.
      */
     public static final String CHECK_UPIWARDCODE_PROPERTY_SELECTED = CHECK + "102";
    
@@ -1437,4 +1437,24 @@ public class ClientMessage {
             SYSTEMATIC_REGISTRATION + "003";
     public static final String SYSTEMATIC_REGISTRATION_SRWU_SAVED =SYSTEMATIC_REGISTRATION + "004";
     
+ /**
+     * clisec001 - Your password is due to expire in {0} days.
+     */
+    public static final String SECURITY_WARN_PWORD_EXPIRY = SECURITY + "001";
+    /**
+     * clisec002 - Your password has been set by an administrator.
+     */
+    public static final String SECURITY_PASSWORD_SET_BY_ADMIN = SECURITY + "002";
+    /**
+     * clisec003 - Your password has expired.
+     */
+    public static final String SECURITY_PASSWORD_EXPIRED = SECURITY + "003";
+    /**
+     * clisec004 - Admin Desktop.
+     */
+    public static final String SECURITY_LOGIN_TITLE_ADMIN = SECURITY + "004";
+    /**
+     * clisec005 - State Land Desktop.
+     */
+    public static final String SECURITY_LOGIN_TITLE_SYSTEMATIC = SECURITY + "005";
 }
