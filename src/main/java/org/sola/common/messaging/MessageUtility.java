@@ -1,6 +1,6 @@
 /**
  * ******************************************************************************************
- * Copyright (C) 2012 - Food and Agriculture Organization of the United Nations (FAO).
+ * Copyright (C) 2014 - Food and Agriculture Organization of the United Nations (FAO).
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without modification,
@@ -175,6 +175,49 @@ public class MessageUtility {
      */
     public static String getLocalizedMessageText(String msgCode) {
         return getLocalizedMessage(msgCode).getMessage();
+    }
+    
+    /** 
+     * Returns message text. 
+     * @param msgCode The code identifying of the message to obtain.
+     * @param localeCode Locale code (e.g. en-US)
+     * @see ServiceMessage#GENERAL_UNEXPECTED
+     * @return 
+     */
+    public static String getLocalizedMessageText(String msgCode, String localeCode){
+        return getLocalizedMessageText(msgCode, localeCode, null);
+    }
+    
+    /** 
+     * Returns message text. 
+     * @param msgCode The code identifying of the message to obtain.
+     * @param localeCode Locale code (e.g. en-US)
+     * @param messageParameters The list of parameters to substitute into the message.
+     * @see ServiceMessage#GENERAL_UNEXPECTED
+     * @return 
+     */
+    public static String getLocalizedMessageText(String msgCode, String localeCode, Object[] messageParameters){
+        String msgText = "";
+        LocalizedMessage msg;
+        
+        if(localeCode!=null && !localeCode.equals("")){
+            Locale locale;
+            if(localeCode.contains("-")){
+                String localeParts[] = localeCode.toLowerCase().split("-");
+                locale = new Locale(localeParts[0], localeParts[1].toUpperCase());
+            } else 
+            {
+                locale = new Locale(localeCode);
+            }
+            msg = getLocalizedMessage(msgCode, locale, messageParameters);
+        } else {
+            msg = getLocalizedMessage(msgCode, messageParameters);
+        }
+        
+        if(msg!=null){
+            msgText = msg.getMessage();
+        }
+        return msgText;
     }
     
     /**

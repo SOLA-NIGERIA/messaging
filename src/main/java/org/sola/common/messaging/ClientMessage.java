@@ -464,10 +464,33 @@ public class ClientMessage {
       /**
      * clichck108 - Select one of the Land Holder Types
       */
-    public static final String SHARES_SELECT_TYPE = CHECK + "106";
+    public static final String SHARES_SELECT_TYPE = CHECK + "108";
 	
 	
-	
+	 /**
+     * clichck109 - gender must be specified.
+     */
+    public static final String CHECK_FIELD_INVALID_LENGTH_DESCRIPTION = CHECK + "109";
+    /**
+     * clichck110 - gender must be specified.
+     */
+    public static final String CHECK_FIELD_INVALID_LENGTH_DISPLAY = CHECK + "110";
+    /**
+     * clichck111 - gender must be specified.
+     */
+    public static final String CHECK_FIELD_INVALID_LENGTH_FIRSTNAME = CHECK + "111";
+    /**
+     * clichck112 - gender must be specified.
+     */
+    public static final String CHECK_FIELD_INVALID_LENGTH_USERNAME = CHECK + "112";
+    /**
+     * clichck113 - gender must be specified.
+     */
+    public static final String CHECK_FIELD_INVALID_LENGTH_PASSWORD = CHECK + "113";
+	 /**
+     * clichck114 - gender must be specified.
+     */
+    public static final String CHECK_FIELD_INVALID_LENGTH_CODE = CHECK + "114";
 	
     
     // Application messages
@@ -1228,15 +1251,29 @@ public class ClientMessage {
      * cliadmin035 - running.
      */
     public static final String ADMIN_CONSOLIDATION_RUNNING = ADMIN + "035";
+	
+	/**
+     * cliadmin036 - Server cached flushed successfully.
+     */
+    public static final String ADMIN_FLUSH_CACHE = ADMIN + "036";
+    
       /**
      * cliadmin037 - Test v1601
      */
     public static final String ADMIN_TEST_VERSION_NUMBER = ADMIN + "037";
     /**
-     * cliadmin037 - Release v1601
+     * cliadmin038 - Release v1601
      */
     public static final String ADMIN_PROD_VERSION_NUMBER = ADMIN + "038";
 
+	 /**
+     * cliadmin039- Password is missing.
+     */
+    public static final String ADMIN_CONSOLIDATION_NO_ACTION_SELECTED = ADMIN + "039";
+
+    
+	
+	
 
     // Progress bar messages
     /**
