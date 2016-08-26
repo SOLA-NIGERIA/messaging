@@ -492,7 +492,11 @@ public class ClientMessage {
      */
     public static final String CHECK_FIELD_INVALID_LENGTH_CODE = CHECK + "114";
 	
-    
+    /**
+    * clichck115 - Lease conditions must be provided.
+    */
+    public static final String CHECK_NOTNULL_LEASE_CONDITIONS = CHECK + "115";
+
     // Application messages
     /**
      * cliapp001 - Select document to attach digital copy.
@@ -866,6 +870,12 @@ public class ClientMessage {
      */
     public static final String BAUNIT_LEASE_REJECTION_REASON_TITLE = BAUNIT + "026";
     
+    /**
+     * clibaunit027 - Lease conditions text requires to enter different parameters. \n
+     * Please, go through the text and substitute "[@]" combination with real values.
+     */
+    public static final String BAUNIT_LEASE_CONDITIONS_MISSING_PARAMS = BAUNIT + "027";
+
       /**
      * clidispute001 - Dispute has been saved successfully.
      */
