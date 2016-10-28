@@ -1268,11 +1268,11 @@ public class ClientMessage {
     public static final String ADMIN_FLUSH_CACHE = ADMIN + "036";
     
       /**
-     * cliadmin037 - Test v1610a
+     * cliadmin037 - Test v1610b
      */
     public static final String ADMIN_TEST_VERSION_NUMBER = ADMIN + "037";
     /**
-     * cliadmin038 - Release v1610a
+     * cliadmin038 - Release v1610b
      */
     public static final String ADMIN_PROD_VERSION_NUMBER = ADMIN + "038";
 
